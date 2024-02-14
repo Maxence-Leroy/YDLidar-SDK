@@ -59,16 +59,16 @@ endif()
 
 #############################################################################
 # option
-option( BUILD_SHARED_LIBS "Build shared libraries." OFF)
-option( BUILD_EXAMPLES "Build Example." ON)
+option( BUILD_SHARED_LIBS "Build shared libraries." ON)
+option( BUILD_EXAMPLES "Build Example." OFF)
 option( BUILD_CSHARP "Build CSharp." OFF)
 option( BUILD_TEST "Build Test." OFF)
 
 ############################################################################
 # find package
 find_package(SWIG)
-find_package(PythonInterp)
-find_package(PythonLibs)
+find_package(PythonInterp 3.12 EXACT REQUIRED)
+find_package(PythonLibs 3.12 EXACT REQUIRED)
 find_package(GTest)
 
 ############################################################################
