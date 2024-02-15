@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(ydlidar_sdk C CXX)
 
+set(SWIG_EXECUTABLE /usr/local/bin/swig)
+
 #########################################################
 # version
 set(YDLIDAR_SDK_VERSION_MAJOR 1)
@@ -67,8 +69,8 @@ option( BUILD_TEST "Build Test." OFF)
 ############################################################################
 # find package
 find_package(SWIG)
-find_package(PythonInterp 3.12 EXACT REQUIRED)
-find_package(PythonLibs 3.12 EXACT REQUIRED)
+find_package(PythonInterp 3.12.2 EXACT REQUIRED)
+find_package(PythonLibs 3.12.2 EXACT REQUIRED)
 find_package(GTest)
 
 ############################################################################
