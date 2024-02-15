@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 project(ydlidar_sdk C CXX)
 
 set(SWIG_EXECUTABLE /usr/local/bin/swig)
+set(PYTHON_INCLUDE_DIR /home/minotaure/.pyenv/versions/3.11.8/include/python3.11)
+set(PYTHON_LIBRARY /home/minotaure/.pyenv/versions/3.11.8/lib)
 
 #########################################################
 # version
@@ -69,8 +71,8 @@ option( BUILD_TEST "Build Test." OFF)
 ############################################################################
 # find package
 find_package(SWIG)
-find_package(PythonInterp 3.12.2 EXACT REQUIRED)
-find_package(PythonLibs 3.12.2 EXACT REQUIRED)
+find_package(PythonInterp 3.11.8 EXACT REQUIRED)
+find_package(PythonLibs REQUIRED)
 find_package(GTest)
 
 ############################################################################
