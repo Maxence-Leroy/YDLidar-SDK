@@ -172,3 +172,7 @@ YDLidar-SDK.files
 .gitignore
 YDLidar-SDK.includes
 build/Testing/Temporary/LastTest.log
+
+build/
+dist/
+ydlidar.egg-info/
